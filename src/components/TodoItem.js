@@ -7,7 +7,7 @@ class TodoItem extends Component {
             <li className="todo-list">
                 <input
                     className="todo-checkbox"
-                    onChange={ (event) => this.props.toggleTodoDone(event, this.props.index)}
+                    onChange={ (e) => this.props.toggleTodoDone(e.target, this.props.index)}
                     type="checkbox"
                     checked={this.props.item.done} />
                 <span style={{textDecoration: this.props.item.done ? 'line-through' : 'inherit'}}>{this.props.item.title}</span>

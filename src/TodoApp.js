@@ -16,9 +16,9 @@ class TodoApp extends Component {
         };
     }
 
-    updateUserInput= (event) => {
+    updateUserInput= (input) => {
         this.setState({
-            userInput: event.target.value
+            userInput: input
         })
     };
 
@@ -38,13 +38,13 @@ class TodoApp extends Component {
         }
     };
 
-    toggleTodoDone = (event, index) => {
+    toggleTodoDone = (target, index) => {
         // copy the array
         const todoList = [...this.state.todoList];
         // copy the todo
         todoList[index] = {...todoList[index]};
         // update done property on copied todo
-        todoList[index].done = event.target.checked;
+        todoList[index].done = target.checked;
 
         this.setState({
             todoList
