@@ -43,6 +43,10 @@ ul {
     padding: 5px 5px;
 }
 
+.todo-new {
+    margin-top: 20px;
+}
+
 .todo-list {
     flex: 1 1 0;
     margin-top: 20px;

@@ -4,7 +4,7 @@ class AddNewTodo extends Component {
 
     render () {
         return (
-            <div className="center">
+            <div className="center todo-new">
                 <textarea rows="4" cols="50"
                     onChange={(e) => {this.props.updateUserInput(e.target.value)}}
                     value={this.props.userInput}
