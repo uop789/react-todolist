@@ -4,7 +4,7 @@ class TodoItem extends Component {
     render () {
 
         return (
-            <li className="todo-list">
+            <li className="todo-container">
                 <input
                     className="todo-checkbox"
                     onChange={ (e) => this.props.toggleTodoDone(e.target, this.props.index)}

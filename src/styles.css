@@ -64,7 +64,8 @@ ul {
 
 .todo-container {
     padding: 20px;
-    border-bottom: 1px solid #333;
+    border: 1px solid #333;
+    border-top: 0;
 }
 
 .todo-container:first-of-type {

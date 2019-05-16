@@ -77,11 +77,14 @@ class TodoApp extends Component {
                     updateUserInput = {this.updateUserInput}
                     addToList = {this.addToList}
                 />
-                <TodoList
+
+                {this.state.todoList && this.state.todoList.length ?
+                    <TodoList
                     todoList={this.state.todoList}
                     toggleTodoDone={this.toggleTodoDone}
                     removeTodo={this.removeTodo}
-                />
+                    /> : null}
+
             </div>
         );
     }
